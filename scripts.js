@@ -2,7 +2,7 @@ const cells = document.querySelectorAll(".cell");
 const statusText = document.getElementById("status");
 const resetButton = document.getElementById("reset");
 let board = ["", "", "", "", "", "", "", "", ""];
-let currentPlayer = "X";
+let currentPlayer = "🚢"; // Start with player 
 let isGameActive = true;
 
 // Winning combinations
@@ -63,7 +63,7 @@ function checkResult() {
 
 // Switch players
 function switchPlayer() {
-    currentPlayer = currentPlayer === "X" ? "O" : "X";
+    currentPlayer = currentPlayer === "🚢" ? "🏖️" : "🚢";
     statusText.innerText = playerTurn();
 }
 
@@ -71,7 +71,7 @@ function switchPlayer() {
 function restartGame() {
     board = ["", "", "", "", "", "", "", "", ""];
     isGameActive = true;
-    currentPlayer = "X";
+    currentPlayer = "🚢";
     statusText.innerText = playerTurn();
     cells.forEach(cell => cell.innerText = "");
 }
