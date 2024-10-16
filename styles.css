@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f8fafd;
+    color: #041c54;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
 }
 
 .cell {
-    background-color: #fff;
+    background-color: #37a7d0;
     border: 2px solid #333;
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@ h1 {
 }
 
 .cell:hover {
-    background-color: #ddd;
+    background-color: #849da6;
 }
 
 #status {
@@ -48,12 +48,12 @@ button {
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #333;
+    background-color: #041c54;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #848282;
 }
